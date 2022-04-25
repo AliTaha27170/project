@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Frutiger LT Arabic 55 Roman';
+    src: url('FrutigerLTArabic-55Roman.eot');
+    src: url('FrutigerLTArabic-55Roman.eot?#iefix') format('embedded-opentype'),
+        url('FrutigerLTArabic-55Roman.woff') format('woff'),
+        url('FrutigerLTArabic-55Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

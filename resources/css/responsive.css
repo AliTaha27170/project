@@ -1,0 +1,104 @@
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px ) {
+
+
+}
+
+@media (max-width: 992px ) {
+
+
+
+}
+
+
+/* ipad */
+@media (min-width: 768px) and (max-width: 992px) {
+    
+    .doners .doner-logo img{
+        margin-bottom: 10px;
+    }
+    .subscribe .sub-form h4{
+        margin-bottom: 10px;
+    }
+    .subscribe .sub-form .mar{
+        margin-bottom: 10px;
+    }
+    .pad-r{
+        padding-right: 15px;
+    }
+    .pad-l{
+        padding-left: 0px;
+    } 
+    .no-pad-r{
+        padding-right: 15px;
+    }
+    .no-pad-l{
+        padding-left: 15px;
+    }
+	
+}
+
+
+
+/* extra small devices (desktops, 720 and down) iphone */
+@media (max-width: 720px ) {
+    
+    #header .header-content .logo{
+        text-align: center;
+    }
+    #header .header-content .left{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #wrap nav{
+        min-height: 50px;
+    }
+    .navbar .navbar-header .navbar-toggle{
+        float: right;
+        margin-right: 15px;
+    }
+	#wrap nav .navbar-collapse{
+		padding-right: 10px;
+	}
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+        background-color: #035b50;
+    }
+    
+    #content .news-box img{
+        width: 93%;
+        height: 100%;
+        margin-bottom: 15px;
+    }
+    #content .news-box a,
+    #content .news-box p{
+       margin: 0 10px;
+    }
+    #content .news-box .nice{
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    .doners .doner-logo img{
+        margin-bottom: 10px;
+    }
+    .subscribe .sub-form h4{
+        margin-bottom: 10px;
+    }
+    .pad-r{
+        padding-right: 15px;
+    }
+    .pad-l{
+        padding-left: 15px;
+    }
+	#content #about-us .pad-l{
+		padding-left: 35px;
+	}
+    .no-pad-r{
+        padding-right: 15px;
+    }
+    .no-pad-l{
+        padding-left: 15px;
+    }
+    
+	
+}
