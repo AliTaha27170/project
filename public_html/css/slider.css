@@ -1,0 +1,257 @@
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css');
+
+/* swiper */
+.news-slider{
+    margin-top: 40px;
+}
+.swiper-container {
+  direction: ltr;
+  font-family:"Noto Kufi Arabic";
+  padding: 0;
+  width: 90%;
+  height: 500px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-container {
+    height: 500px;
+  }
+}
+.swiper-slide {
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.swiper-slide:after {
+  content: "";
+  background-image: linear-gradient(0deg, black, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0.3;
+}
+
+.swiper-slide:before {
+  content: "";
+  background-color: rgba(69, 69, 78, 0.2);
+  background-image: linear-gradient(180deg, rgba(255, 234, 213, 0.3), rgba(241, 244, 255, 0.3));
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  z-index: 1;
+}
+
+/* swiper arrows */
+.swiper-button-prev,
+.swiper-button-next {
+  width: 50px;
+  height: 50px;
+  background-image: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-prev {
+  left: 30px;
+}
+
+.swiper-button-next {
+  right: 30px;
+}
+
+.swiper-button-prev span,
+.swiper-button-next span {
+  width: 10px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  position: absolute;
+  border: solid 2px white;
+  border-left: 0;
+  border-bottom: 0;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-prev span {
+  transform: rotate(-135deg);
+  left: 50%;
+}
+
+.swiper-button-next span {
+  transform: rotate(45deg);
+  right: 50%;
+}
+
+.swiper-button-prev span:after,
+.swiper-button-next span:after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 0px;
+  height: 2px;
+  transition: all 0.3s ease;
+  transform: rotate(-45deg);
+}
+
+.swiper-button-prev:hover span {
+  left: 30%;
+}
+
+.swiper-button-next:hover span {
+  right: 30%;
+}
+
+.swiper-button-prev:hover span:after,
+.swiper-button-next:hover span:after {
+  width: calc(20px - 4px);
+}
+
+/* swiper arrows mobile */
+@media screen and (max-width: 768px) {
+  .swiper-button-prev {
+    left: 0px;
+  }
+
+  .swiper-button-next {
+    right: 0px;
+  }
+
+  .swiper-button-prev:hover span {
+    left: 50%;
+  }
+
+  .swiper-button-next:hover span {
+    right: 50%;
+  }
+
+  .swiper-button-prev:hover span:after,
+.swiper-button-next:hover span:after {
+    display: none;
+  }
+}
+/* swiper pagination */
+.swiper-pagination {
+  height: 40px;
+}
+
+.swiper-pagination-bullet {
+  background-color: transparent;
+  border: solid 1px white;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.swiper-pagination-bullet:hover {
+  background-color: white;
+}
+
+.swiper-pagination-bullet-active {
+  width: 20px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  left: 0;
+  background-color: transparent;
+  border: solid 1px white;
+}
+
+/* text content */
+.slide-text{
+  display: flex;
+  flex-direction: row-reverse;
+  width: 80%;
+  align-items: center;
+  justify-content: flex-start;
+}
+.slide-text .text{
+  text-align: right;
+  color: white;
+  opacity: 1;
+  z-index: 2;
+  width: 80%;
+  max-width: 500px;
+}
+.slide-text .image{
+  margin-left: 25px;
+  z-index: 2;
+}
+.slide-text .image img{
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.slide-text .text h2 {
+    font-size: 22px;
+    margin-bottom: 18px;
+    font-weight: 600;
+  }
+
+
+.slide-text p {
+  font-size: 16px;
+}
+
+/* text mobile */
+@media screen and (max-width: 768px) {
+  .slide-text {
+    flex-direction: column;
+    width: 100%;
+  }
+  .slide-text .text{
+    text-align: center;
+  }
+  .slide-text .image{
+    margin: 0;
+  }
+
+
+  .slide-text p {
+    font-size: 14px;
+  }
+}
+/* button */
+.slide-text .btn {
+  background-color: transparent;
+  border: solid 1px white;
+  padding: 15px 30px;
+  min-width: 100px;
+  width: fit-content;
+  font-size: 14px;
+  color: white;
+  position: relative;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.slide-text .btn:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .slide-text .btn:hover::after {
+    left: 0px;
+    top: 0px;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+button:focus {
+  outline: 0;
+}

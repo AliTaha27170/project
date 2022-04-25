@@ -5,46 +5,123 @@ $page = 'main';
 @extends('layout')
 
 @section('content')
-      <!-- Slider main container -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-        @foreach ($slides as $item)
+<div class="news-slider container">
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+  <!-- Slider -->
+
+                <!-- Slide1 -->
+                <div class="swiper-slide" style="background-image: url(https://qfs.com.sa/front/images/Group-1158@2x.png)">
+                  <div class="slide-text">
+                     <div class="image"><img src="{{asset('front/images/news/1.jpg')}}" alt=""></div>
+                     <div class="text">
+                     <h2>تسجيل الجمعية في المنصة الوطنية للعمل التطوعي </h2>
+                     <p>تم تسجيل الجمعية في المنصة الوطنية للعمل التطوعي التابعة لوزارة الموارد البشرية والتنمية الاجتماعية وذلك دعمًا للعمل التطوعي ومشاركة المتطوعين في أعمال الجمعية.</p>
+                     <button class="btn">اقرأ المزيد</button>
+                     </div>
+
+                  </div>
+               </div>
+               <!-- END Slide1 -->
+            <!-- Slide2 -->
+            <div class="swiper-slide" style="background-image: url(https://qfs.com.sa/front/images/Group-1158@2x.png)">
+            <div class="slide-text">
+                <div class="image"><img src="{{asset('front/images/news/2.jpg')}}" alt=""></div>
+                <div class="text">
+                    <h2>اتفاقية تعاون مع إدارة التعليم بمكة المكرمة</h2>
+                    <p>تم إبرام اتفاقية تعاون مع إدارة التعليم بمكة المكرمة لإنجاح مبادرة (مقصف مدرستي) التي تهدف إلى تحسين مستوى الخدمات الغذائية وتحقيق الجودة والسلامة الغذائية في المقاصف المدرسية</p>
+                <button class="btn">اقرأ المزيد</button>
+                </div>
+
+            </div>
+            </div>
+            <!-- END Slide2 -->
+            <!-- Slide3 -->
+            <div class="swiper-slide" style="background-image: url(https://qfs.com.sa/front/images/Group-1158@2x.png)">
+                <div class="slide-text">
+                    <div class="image"><img src="{{asset('front/images/news/3.png')}}" alt=""></div>
+                    <div class="text">
+                    <h2>حضور مؤتمر التحول الرقمي للقطاع غير الربحي بمكة المكرمة 1443هـ</h2>
+                    <p>تم حضور الجمعية لمؤتمر التحول الرقمي للقطاع غير الربحي بإشراف مركز التنمية الاجتماعية بمكة المكرمة في فندق فيرمونت برج الساعة وبرعاية أمارة منطقة مكة المكرمة والتي تم التعرف فيه على العديد من الجهات التي تساعد في تنمية العمل في الجمعية.</p>
+                    <button class="btn">اقرأ المزيد</button>
+                    </div>
+
+                </div>
+                </div>
+                <!-- END Slide3 -->
+                <!-- Slide4 -->
+                <div class="swiper-slide" style="background-image: url(https://qfs.com.sa/front/images/Group-1158@2x.png)">
+                    <div class="slide-text">
+                        <div class="image"><img src="{{asset('front/images/news/4.jpg')}}" alt=""></div>
+                        <div class="text">
+                        <h2>اتفاقية تعاون مع جمعية جوار بمكة المكرمة</h2>
+                        <p>تم إبرام اتفاقية تعاون مع جمعية البر الخيرية لقرى جنوب مكة (جوار) لتقديم سلال غذائية صحية يتم على أساسها تجهيز هذه السلال بناء على متطلبات خاصة بالمستفيدين ومناسبة لحالتهم الصحية.</p>
+                        <button class="btn">اقرأ المزيد</button>
+                        </div>
+
+                    </div>
+                    </div>
+              <!-- END Slide4 -->
+                <!-- Slide5 -->
+                <div class="swiper-slide" style="background-image: url(https://qfs.com.sa/front/images/Group-1158@2x.png)">
+                <div class="slide-text">
+                    <div class="image"><img src="{{asset('front/images/news/5.jpg')}}" alt=""></div>
+                    <div class="text">
+                    <h2>حضور معرض فوديكس للأغذية بجدة 1443هـ</h2>
+                    <p>تم حضور الجمعية لمعرض فوديكس للأغذية والذي تم انعقاده بأرض المعارض بمدينة جدة حيث استضاف فيه العديد من الشركات الغذائية والمنتجات المميزة وجهات متعددة التي تساعد في نهضة القطاع الغذائي في المملكة</p>
+                    <button class="btn">اقرأ المزيد</button>
+                    </div>
+
+                </div>
+                </div>
+            <!-- END Slide5 -->
+            <!-- Slide6 -->
+            <div class="swiper-slide" style="background-image: url(https://qfs.com.sa/front/images/Group-1158@2x.png)">
+                <div class="slide-text">
+                    <div class="image"><img src="{{asset('front/images/news/6.jpg')}}" alt=""></div>
+                    <div class="text">
+                    <h2>اتفاقية تعاون مع مركز HCC للتدريب الصحي</h2>
+                    <p>تم إبرام اتفاقية تعاون مع مركز HCC للتدريب الصحي وذلك تحقيقًا لأحد أهداف الجمعية من خلال تقديم الدورات التدريبية والمعتمدة من الهيئة السعودية للتخصصات الصحية.</p>
+                    <button class="btn">اقرأ المزيد</button>
+                    </div>
+
+                </div>
+                </div>
+            <!-- END Slide6 -->
+            <!-- Slide7 -->
+            <div class="swiper-slide" style="background-image: url(https://qfs.com.sa/front/images/Group-1158@2x.png)">
+                <div class="slide-text">
+                    <div class="image"><img src="{{asset('front/images/news/7.png')}}" alt=""></div>
+                    <div class="text">
+                    <h2>حضور مؤتمر ومعض خدمات الحج والعمرة بجدة 1443هـ</h2>
+                    <p>تم حضور الجمعية لمؤتمر ومعرض خدمات الحج والعمرة والذي تم انعقاده بقاعة جدة سوبر دوم تحت شعار (التحول نحو الابتكار )برعاية مستشار خادم الحرمين الشريفين أمير منطقة مكة المكرمة صاحب السمو الملكي الأمير خالد الفيصل حفظه الله</p>
+                    <button class="btn">اقرأ المزيد</button>
+                    </div>
+
+                </div>
+                </div>
+            <!-- END Slide7 -->
+            <!-- Slide8 -->
+            <div class="swiper-slide" style="background-image: url(https://qfs.com.sa/front/images/Group-1158@2x.png)">
+                <div class="slide-text">
+                    <div class="image"><img src="{{asset('front/images/news/8.jpg')}}" alt=""></div>
+                    <div class="text">
+                    <h2>إطلاق مشروع الباقة الغذائية الرمضانية</h2>
+                    <p>تم إطلاق باقة غذائية رمضانية تضم ثلاثة منتجات غذائية في شهر رمضان المبارك لعام 1433هـ وتشمل هذه الباقة ( سلة رمضانية – وجبات لإفطار الصائم – سقيا الماء) بسعر 200 ريال للباقة الكاملة</p>
+                    <button class="btn">اقرأ المزيد</button>
+                    </div>
+
+                </div>
+                </div>
+            <!-- END Slide8 -->
 
 
-      <div class="swiper-slide" style="background-image: url(storage/{{$item->image}});">
-        <div class="txt-home">
-          <h1>{!! $item->title !!}</h1>
-          {{-- <h3>منطقة عمل الجمعية مكة المكرمة</h3> --}}
-          <p>{!! $item->description !!}</p>
-          
-        </div>
-      </div>
 
-      @endforeach
-        @foreach ($new_slides as $item)
-
-
-      <div class="swiper-slide" style="background-image: url(storage/{{$item->image}});">
-        <div class="txt-home">
-          <h1>{!! $item->title !!}</h1>
-          <p>{!! $item->mini_des !!}</p>
-          <!--<a style="width:50%;color: rgb(255, 255, 255);background-color: #1f1a3b;" class="btn btn-light" href="/news/{{$item->id}}">قراءة المزيد</a>-->
-        </div>
-        <button onclick="redirectToNews({{$item->id}})" class="btn btn-link" style="    color: rgb(255, 255, 255);
-    background-color: #1f1a3b;">قراءة المزيد</buuton>
-      </div>
-
-      @endforeach
-    </div>
-    <div class="button-next">
-      <i class="fas fa-chevron-left"></i>
-    </div>
-    <div class="button-prev">
-      <i class="fas fa-chevron-right"></i>
-    </div>
-    <!--<div class="swiper-pagination"></div>-->
   </div>
-  
+
+
+</div>
+</div>
   <!-- بداية من نحن  -->
   <section class="who">
     <div class="container">
@@ -300,10 +377,11 @@ $page = 'main';
   </div>
    </div>
   <!-- نهاية شركاء النجاح -->
-@endsection
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+  <script src="{{asset('js/slider.js')}}"></script>@endsection
 <script>
     function redirectToNews(id){
         console.log(id)
-        window.location.href="/news/"+id;    
+        window.location.href="/news/"+id;
     }
 </script>

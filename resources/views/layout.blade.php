@@ -31,10 +31,10 @@ $new_slides = DB::table('news')->latest()->limit(4)->get();
     @endif
 
     @if ($page == 'main')
-
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="{{asset('front/css/الرئيسيه.css')}}">
     <link rel="stylesheet" href="{{asset('front/css/mediaالرش.css')}}">
+    <link rel="stylesheet" href="{{asset('css/slider.css')}}">
     @endif
 
     <!-- <link rel="stylesheet" href="css/media-الرئيسية.css"> -->
@@ -203,7 +203,7 @@ $new_slides = DB::table('news')->latest()->limit(4)->get();
           </div>
         </div>
         <ul>
-            
+
           <li><a href="/news">الأخبار </a></li>
         <li><a href="/initiatives">المبادرات والمشاريع </a></li>
         <li><a href="/show-meetings">الاجتماعات </a></li>
